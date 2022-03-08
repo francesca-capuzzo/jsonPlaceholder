@@ -1,0 +1,10 @@
+<button (click)="getDataFromAPI()">GET DATA</button>
+
+<ul *ngFor="let user of data">
+  <li>{{user.name | uppercase}}</li>
+  <li>username: {{user.username}}</li>
+  <li>email: {{user.email}}</li>
+  <li>phone: {{user.phone}}</li>
+  <li>web: {{user.website}}</li>
+  <app-address></app-address>
+</ul>
