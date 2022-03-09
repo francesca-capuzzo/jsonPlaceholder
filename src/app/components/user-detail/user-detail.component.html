@@ -1,0 +1,8 @@
+<div class="container" *ngIf="user">                         <!--senza l'IF user.name (e tutti gli altri) mi da errore perchè 'potrebbe non esserci'-->
+    <span>{{user.name}}</span>
+    <span>{{user.username}}</span>
+    <span>{{user.email}}</span>
+    <span>{{user.phone}}</span>
+    <span>{{user.name}}</span>
+    <app-address-card [address]="user.address"></app-address-card>
+</div>

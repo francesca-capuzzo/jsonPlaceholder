@@ -1,0 +1,6 @@
+<div *ngIf="users">                                            <!--  metto l'ngIf che è fondamentale e dice 'inizializza solo se lo users esiste' -> non si può ciclare su un elemento vuoto o undefined che non fa partire il ciclo se l'elemento non esiste -->
+    <!-- <p *ngFor="let user of users">{{user.name}}</p> -->   <!--  utilizzo al posto del p, lo user-detail che ho creato e ciclo su quello per avere la scheda di ogni user-->
+    <app-user-detail *ngFor="let element of users" [user]="element"></app-user-detail>
+</div>
+
+

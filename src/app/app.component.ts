@@ -10,6 +10,9 @@ import { JSONserviceService } from './services/jsonservice.service'
 
 
 export class AppComponent {
+  
+  title = 'JSON Placeholder';
+
 
   // showAddress(){
   //   this.JSONservice.getData().subscribe((data) => {

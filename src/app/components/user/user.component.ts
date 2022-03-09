@@ -11,8 +11,6 @@ export class UserComponent implements OnInit {
 
   data: Array<any>
 
-  title = 'Json Placeholder';
-
   constructor(private JSONservice: JSONserviceService){
     this.data = new Array<any>()
   }
